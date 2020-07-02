@@ -18,7 +18,13 @@
     
     */
     </script>
+function Game(){
 
+    this.ctx = canvas.getContext('2d')
+    this.scale = 20;
+    this.nx = Math.floor(canvas.width/this.scale);
+    this.ny = Math.floor(canvas.height/this.scale);
+}
 
 
 

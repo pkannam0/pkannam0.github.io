@@ -16,7 +16,7 @@
     
     
     */
-   
+
 
     function Game(){
 
@@ -27,7 +27,13 @@
         this.Rect = function(x, y, w, h, fs){
             this.ctx.fillStyle = fs;
             this.ctx.fillRect(x*this.scale, y*this.scale, w*this.scale - 1, h*this.scale - 1);
+    
 };
+    }
+draw = function(){
+
+this.draw = function(){
+       this.Rect(0,0, this.nx, this.ny, 'yellow')
 
 }
 

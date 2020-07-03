@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
             <title>Document</title>
 </head>
 <body>
+<<<<<<< HEAD
     <canvas id=canvas height=550 width=1345 style="border:1px solid #000000;">
         
+=======
+    <canvas id=canvas height=550 width=1000 style="border:1px solid #000000;">
+>>>>>>> 2412619976145cb4b5ed433fdbcc57b19a24b490
     </canvas>
     <script>
     /*
@@ -26,7 +31,7 @@
         this.nx = Math.floor(canvas.width/this.scale);
         this.ny = Math.floor(canvas.height/this.scale);
         this.Rect = function(x, y, w, h, fs){
-            this.ctx.fillStyle = fs;
+            this.ctx.fillStyle = "blue";
             this.ctx.fillRect(x*this.scale, y*this.scale, w*this.scale - 1, h*this.scale - 1);
     
 };
@@ -34,7 +39,7 @@
 draw = function(){
 
 this.draw = function(){
-       this.Rect(0,0, this.nx, this.ny, 'blue')
+       this.Rect(0,0, this.nx, this.ny, 'yellow')
 }
 
 window.onload = function () {

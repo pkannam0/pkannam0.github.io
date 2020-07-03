@@ -22,7 +22,11 @@
 
     function OnLoad()
     {
+<<<<<<< HEAD
         search = new google.search.ImageSearch();
+=======
+        search = new google.search.ImageSearch('https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2F0%2F0a%2FFlappy_Bird_icon.png&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFlappy_Bird&tbnid=PzkBZA2DsmKAvM&vet=12ahUKEwiRj8qkz7DqAhUWG3IKHQIJAVsQMygAegUIARDUAQ..i&docid=MTPI2n4U2zldxM&w=175&h=175&q=flappy%20bird%20pics&ved=2ahUKEwiRj8qkz7DqAhUWG3IKHQIJAVsQMygAegUIARDUAQ');
+>>>>>>> 5149ab421f014cfbb2992edb58aa3ff0bf7991d5
 
         search.setSearchCompleteCallback(this, searchComplete, null);
 
@@ -39,7 +43,6 @@
             document.body.style.backgroundImage = "url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2F0%2F0a%2FFlappy_Bird_icon.png&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFlappy_Bird&tbnid=PzkBZA2DsmKAvM&vet=12ahUKEwiRj8qkz7DqAhUWG3IKHQIJAVsQMygAegUIARDUAQ..i&docid=MTPI2n4U2zldxM&w=175&h=175&q=flappy%20bird%20pics&ved=2ahUKEwiRj8qkz7DqAhUWG3IKHQIJAVsQMygAegUIARDUAQ" + search.results[rnd]['url'] + "')";
         }
     }
-
 
     function Game(){
         

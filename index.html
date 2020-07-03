@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
             <title>Document</title>
+
 </head>
 <body> 
     <canvas id=canvas height=550 width=1000 style="border:1px solid #000000;">
@@ -20,7 +21,7 @@
 
 
     function Game(){
-
+        
         this.ctx = canvas.getContext('2d')
         this.scale = 20;
         this.nx = Math.floor(canvas.width/this.scale);

@@ -16,22 +16,30 @@
     -rect(background)
     
     
-    */
+    */Game
+    
+    
     function Game(){
 
-    this.ctx = canvas.getContext('2d')
-    this.scale = 20;
-    this.nx = Math.floor(canvas.width/this.scale);
-    this.ny = Math.floor(canvas.height/this.scale);
-    }
+        this.ctx = canvas.getContext('2d')
+        this.scale = 20;
+        this.nx = Math.floor(canvas.width/this.scale);
+        this.ny = Math.floor(canvas.height/this.scale);
+        this.Rect = function(x, y, w, h, fs){
+            this.ctx.fillStyle = fs;
+            this.ctx.fillRect(x*this.scale, y*this.scale, w*this.scale - 1, h*this.scale - 1);
+};
+
+}
 
 
 
 
 
-    window.onload = function (){
+window.onload = function (){
     new Game();
-    }
+}
     </script>
+
 </body>
 </html>

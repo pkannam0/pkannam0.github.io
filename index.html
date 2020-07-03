@@ -20,25 +20,12 @@
     */
     var keyword = 'flappy bird';
 
-    function OnLoad()
-    {
-        search = new google.search.ImageSearch('https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2F0%2F0a%2FFlappy_Bird_icon.png&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFlappy_Bird&tbnid=PzkBZA2DsmKAvM&vet=12ahUKEwiRj8qkz7DqAhUWG3IKHQIJAVsQMygAegUIARDUAQ..i&docid=MTPI2n4U2zldxM&w=175&h=175&q=flappy%20bird%20pics&ved=2ahUKEwiRj8qkz7DqAhUWG3IKHQIJAVsQMygAegUIARDUAQ');
-
-        search.setSearchCompleteCallback(this, searchComplete, null);
-
-        search.execute(keyword);
-    }
-
-    function searchComplete()
-    {
-        if (search.results && search.results.length > 0)
-        {
-            var rnd = Math.floor(Math.random() * search.results.length);
-
-            //you will probably use jQuery and something like: $('body').css('background-image', "url('" + search.results[rnd]['url'] + "')");
-            document.body.style.backgroundImage = "url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2F0%2F0a%2FFlappy_Bird_icon.png&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFlappy_Bird&tbnid=PzkBZA2DsmKAvM&vet=12ahUKEwiRj8qkz7DqAhUWG3IKHQIJAVsQMygAegUIARDUAQ..i&docid=MTPI2n4U2zldxM&w=175&h=175&q=flappy%20bird%20pics&ved=2ahUKEwiRj8qkz7DqAhUWG3IKHQIJAVsQMygAegUIARDUAQ" + search.results[rnd]['url'] + "')";
-        }
-    }
+    function ImagesTouching(thing1, thing2) {
+     if (!thing1.visible  || !thing2.visible) return false;         
+     if (thing1.x >= thing2.x + thing2.MyImg.width || thing1.x + thing1.MyImg.width <= thing2.x) return false;  
+     if (thing1.y >= thing2.y + thing2.MyImg.height || thing1.y + thing1.MyImg.height <= thing2.y) return false;
+     return true;                                                                                            
+     }
 
     function Game(){
         

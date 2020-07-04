@@ -1,5 +1,5 @@
 function eightball() {
-    const replies = ['Yes', 'No', 'I don\'t know', 'Probably', 'Probably not', 'I don\'t think so', 'Nope', 'Definitely', 'Of course', 'Definitely not', 'Maybe'];
+    const replies = ['Yes', 'No', 'Probably', 'Probably not', 'I don\'t think so', 'Definitely', 'Of course', 'Definitely not', 'Maybe'];
 
     const result = Math.floor((Math.random() * replies.length));
 

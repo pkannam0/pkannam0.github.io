@@ -5,4 +5,4 @@
     -timer
     -rect(background)
     */
-   var cvs    
+   var cvs

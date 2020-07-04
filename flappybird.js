@@ -4,9 +4,7 @@
     -move bird
     -timer
     -rect(background)
-    
-    
-    */
+*/
 var keyword = 'flappy bird';
 
 function ImagesTouching(thing1, thing2) {

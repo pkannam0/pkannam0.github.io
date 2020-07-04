@@ -10,7 +10,7 @@ bird.src = "Images/bird.png";
 pipeNorth.src = "Images/pipeNorth.png"; 
 pipeSouth.src = "Images/pipeSouth.png";   
 
-var gap = 85;  
+var gap = 400;  
 var constant;  
   
 var bX = 10;  
@@ -18,11 +18,13 @@ var bY = 150;
   
 var gravity = 1.5;  
   
-var score = 0;      
+var score = 0; 
+
+document.addEventListener("keydown",moveLeft);
  
-function moveUp(){  
+function moveLeft(){  
     bY -= 25;  
-    fly.play();  
+     
 }  
   
 var pipe = [];  
@@ -53,8 +55,7 @@ function draw(){
           
           
         if(pipe[i].x == 5){  
-            score++;  
-            scor.play();  
+            score++;    
         }  
           
           

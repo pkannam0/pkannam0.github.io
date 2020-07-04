@@ -52,6 +52,7 @@
     <br>
 
     <h2 id="head" class="animate__animated animate__slideInLeft">4.Ping-Pong Game</h2>
+    <h4>Left Paddle: W = Up, A = Down; Right Paddle: A = Up, D = Down</h4>
     <canvas width="750" height="585" id="game"></canvas>
     <script>
         const canvas = document.getElementById('game');
@@ -192,11 +193,11 @@
         document.addEventListener('keydown', function (e) {
 
             // up arrow key
-            if (e.which === 38) {
-                rightPaddle.dy = -paddleSpeed;
+            if (e.which === 65) {
+                rightPaddle.dy = -paddleSpeed;s
             }
             // down arrow key
-            else if (e.which === 40) {
+            else if (e.which === 68) {
                 rightPaddle.dy = paddleSpeed;
             }
 
@@ -204,7 +205,7 @@
             if (e.which === 87) {
                 leftPaddle.dy = -paddleSpeed;
             }
-            // a key
+            // s key
             else if (e.which === 83) {
                 leftPaddle.dy = paddleSpeed;
             }
@@ -212,7 +213,7 @@
 
         // listen to keyboard events to stop the paddle if key is released
         document.addEventListener('keyup', function (e) {
-            if (e.which === 38 || e.which === 40) {
+            if (e.which === 65 || e.which === 68) {
                 rightPaddle.dy = 0;
             }
 

@@ -1,7 +1,11 @@
 canvas {
     background-color: cyan;
 }
-body {
+html, body {
+    height: 100%;
+
+    margin: 0;
+
     background: #fceabb;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f8b500, #ffdf8f);
@@ -19,11 +23,11 @@ body {
 
 #button1 {
         background-color: #FFFFFF;
-        /* Green */
         border: none;
         border-radius: 10px;
         color: black;
         padding: 10px 10px;
+        position: absolute;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -34,7 +38,7 @@ body {
     }
 #button1:hover {
     background-color: #4CAF50;
-    /* Green */
+    cursor: pointer;
     color: white;
 }
 

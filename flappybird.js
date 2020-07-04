@@ -8,7 +8,7 @@ var bg = new Image();
 var fg = new Image();  
 var pipeNorth = new Image();  
 var pipeSouth = new Image();
-bird.src = "Images/bird.png";   
+bird.src = "Images/newbird.png";   
   
 /*bg.src = "./Images/bg.png";  
 fg.src = "./Images/fg.png";  
@@ -85,7 +85,7 @@ function draw(){
       
     ctx.fillStyle = "#000";  
     ctx.font = "20px Verdana";  
-    ctx.fillText("Score : "+score,10,cvs.height-20);  
+    ctx.fillText("Score : " + score, 10, cvs.height - 20);  
       
     requestAnimationFrame(draw);  
       

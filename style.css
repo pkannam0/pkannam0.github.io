@@ -31,7 +31,7 @@ body {
         font-size: 16px;
         font-family: 'Montserrat',
         sans-serif;
-        transition-duration: 0.4s;
+        transition-duration: 0.3s;
     }
 #button1:hover {
     background-color: #4CAF50;

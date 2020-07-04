@@ -8,9 +8,11 @@ var bg = new Image();
 var fg = new Image();  
 var pipeNorth = new Image();  
 var pipeSouth = new Image();
-bird.src = "Images/bird.png";  
-bg.src = "Images/pipeNorth.png"; 
+bird.src = "Images/newbird.png";
+pipeNorth.src = "Images/pipeNorth.png"; 
+pipeSouth.src = "Images/pipeSouth.png";   
 /* 
+bg.src = "Images/pipeNorth.png"; 
 fg.src = "./Images/fg.png";  
 pipeNorth.src = "./Images/pipeNorth.png";  
 pipeSouth.src = "./Images/pipeSouth.png";*/  
@@ -25,11 +27,11 @@ var gravity = 1.5;
   
 var score = 0;  
   
-var fly = new Audio();  
-var scor = new Audio();  
+//var fly = new Audio();  
+//var scor = new Audio();  
   
-fly.src = "sounds/fly.mp3";  
-scor.src = "sounds/score.mp3";  
+//fly.src = "sounds/fly.mp3";  
+//scor.src = "sounds/score.mp3";  
   
 document.addEventListener("keydown",moveUp);  
   

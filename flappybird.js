@@ -4,15 +4,8 @@
     -move bird
     -timer
     -rect(background)
-<<<<<<< HEAD
-    
-    
-    */
-    var keyword = 'flappy bird';
-=======
 */
 var keyword = 'flappy bird';
->>>>>>> 826862a75af3021cdfbd9413a576862777afda8b
 
     function ImagesTouching(thing1, thing2) {
      if (!thing1.visible  || !thing2.visible) return false;         

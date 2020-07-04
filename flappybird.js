@@ -1,14 +1,20 @@
 var cvs = document.getElementById("canvas");  
 var ctx = cvs.getContext("2d"); 
+
+
   
    
  
 var bird = new Image();  
 var pipeNorth = new Image();  
 var pipeSouth = new Image();
+var color = 'blue';
+draw = function(){
 bird.src = "Images/bird.png";
 pipeNorth.src = "Images/pipeNorth.png"; 
-pipeSouth.src = "Images/pipeSouth.png";   
+pipeSouth.src = "Images/pipeSouth.png"; 
+color;
+}  
 
 var gap = 400;  
 var constant;  

@@ -1,3 +1,39 @@
 canvas {
     background-color: cyan;
 }
+body {
+    background: #fceabb;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f8b500, #f5dea4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f8b500, #f5dea4);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'Montserrat',
+    sans-serif;
+
+}
+#coinflip {
+    font-size: 30px;
+}
+
+#button1 {
+        background-color: #FFFFFF;
+        /* Green */
+        border: none;
+        border-radius: 10px;
+        color: black;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-family: 'Montserrat',
+        sans-serif;
+        transition-duration: 0.4s;
+    }
+#button1:hover {
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
+}

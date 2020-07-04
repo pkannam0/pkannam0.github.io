@@ -11,12 +11,7 @@ var pipeSouth = new Image();
 bird.src = "Images/newbird.png";
 pipeNorth.src = "Images/pipeNorth.png"; 
 pipeSouth.src = "Images/pipeSouth.png";   
-/* 
-bg.src = "Images/pipeNorth.png"; 
-fg.src = "./Images/fg.png";  
-pipeNorth.src = "./Images/pipeNorth.png";  
-pipeSouth.src = "./Images/pipeSouth.png";*/  
-  
+
 var gap = 85;  
 var constant;  
   
@@ -25,16 +20,8 @@ var bY = 150;
   
 var gravity = 1.5;  
   
-var score = 0;  
-  
-//var fly = new Audio();  
-//var scor = new Audio();  
-  
-//fly.src = "sounds/fly.mp3";  
-//scor.src = "sounds/score.mp3";  
-  
-document.addEventListener("keydown",moveUp);  
-  
+var score = 0;      
+ 
 function moveUp(){  
     bY -= 25;  
     fly.play();  
@@ -68,7 +55,7 @@ function draw(){
         }  
           
         if( bX + bird.width >= pipe[i].x && bX <= pipe[i].x + pipeNorth.width && (bY <= pipe[i].y + pipeNorth.height || bY+bird.height >= pipe[i].y+constant) || bY + bird.height >=  cvs.height - fg.height){  
-            location.reload();
+            location.return();
         }  
           
         if(pipe[i].x == 5){  

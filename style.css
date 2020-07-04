@@ -43,3 +43,7 @@ body {
 #h1 {
     font-size: 40px;
 }
+
+#game {
+    background-color: black;
+}

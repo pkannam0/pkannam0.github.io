@@ -11,14 +11,13 @@
      h3{ font-family:'Permanent Marker'; }
  </style> 
  <body>
-     <h1><b>Flappy Bird !!! (game) <div id="div1" class="fa"></div> </b></h1>
-     <h3><b>If you want to have a very high score. Think out of this game !!  ~_^ <hr> and tell me your high score </b></h3>
+     <h1><b>1.Flappy Bird<div id="div1" class="fa"></div> </b></h1>
 <canvas id="myCanvas" width=320 height=480 
  style="background:url('http://s2js.com/img/etc/flappyback.png');  background-size: 100%; height: 95% " 
 </canvas>
     <h3> <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i></h3>
 <script> 
-function smile() {
+function smile(){
   var a;
   a = document.getElementById("div1");
   a.innerHTML = "&#xf118;";
@@ -38,8 +37,6 @@ setInterval(smile, 4000);
 function myFunction(x) {
     x.classList.toggle("fa-thumbs-down");
 }
-// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//
  var ctx = myCanvas.getContext("2d"); 
  var FPS = 40;                  
  var jump_amount = -10;              
